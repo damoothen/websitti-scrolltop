@@ -3,7 +3,7 @@
   "authors": [
     "David Moothen <dmoothen@websitti.fr>"
   ],
-  "description": "jQuery plugin that add a in the page for going straight to top.",
+  "description": "jQuery plugin that add a link in the page for going straight to top.",
   "license": "MIT",
   "homepage": "",
   "private": true,
