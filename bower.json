@@ -1,0 +1,21 @@
+{
+  "name": "websitti-scrolltop",
+  "authors": [
+    "David Moothen <dmoothen@websitti.fr>"
+  ],
+  "description": "jQuery plugin that add a in the page for going straight to top.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
