@@ -13,6 +13,12 @@
             .attr('href', '#')
             .addClass('scrolltop')
             .html('^')
+            .click(function(e){
+                e.preventDefault();
+                $('body', 'html').animate({
+                    scrollTop: 0
+                }, 1000);
+            })
             .appendTo($element);
 
         });
