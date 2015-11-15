@@ -3,7 +3,6 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
-  border: 3px solid gray;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -12,23 +11,36 @@
   height: 40px;
   line-height: 50px;
   font-family: 'Sans-serif';
-  font-weight: bold;
   font-size: 3em;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #b3b3b3;
+  -moz-box-shadow: 0px 0px 5px 2px #999999;
+  -webkit-box-shadow: 0px 0px 5px 2px #999999;
+  box-shadow: 0px 0px 5px 2px #999999;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-/* line 20, ../../sass/jquery.scrolltop.scss */
+/* line 22, ../../sass/jquery.scrolltop.scss */
+.scrolltop:visited {
+  color: #b3b3b3;
+}
+/* line 25, ../../sass/jquery.scrolltop.scss */
 .scrolltop:hover {
   text-decoration: none;
-  color: #4d4d4d;
+  color: white;
 }
-/* line 24, ../../sass/jquery.scrolltop.scss */
-.scrolltop:visited {
-  color: inherit;
-}
-/* line 27, ../../sass/jquery.scrolltop.scss */
+/* line 29, ../../sass/jquery.scrolltop.scss */
 .scrolltop:focus {
   text-decoration: none;
+}
+/* line 32, ../../sass/jquery.scrolltop.scss */
+.scrolltop.active {
+  visibility: visible;
+  opacity: 1;
 }
