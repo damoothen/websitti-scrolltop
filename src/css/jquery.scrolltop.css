@@ -9,7 +9,6 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  line-height: 50px;
   font-family: 'Sans-serif';
   font-size: 3em;
   text-align: center;
@@ -26,20 +25,20 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 22, ../../sass/jquery.scrolltop.scss */
+/* line 21, ../../sass/jquery.scrolltop.scss */
 .scrolltop:visited {
   color: #b3b3b3;
 }
-/* line 25, ../../sass/jquery.scrolltop.scss */
+/* line 24, ../../sass/jquery.scrolltop.scss */
 .scrolltop:hover {
   text-decoration: none;
   color: white;
 }
-/* line 29, ../../sass/jquery.scrolltop.scss */
+/* line 28, ../../sass/jquery.scrolltop.scss */
 .scrolltop:focus {
   text-decoration: none;
 }
-/* line 32, ../../sass/jquery.scrolltop.scss */
+/* line 31, ../../sass/jquery.scrolltop.scss */
 .scrolltop.active {
   visibility: visible;
   opacity: 1;

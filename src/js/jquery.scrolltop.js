@@ -4,7 +4,8 @@
 
         var defaults = {
             template: '^',
-            duration: 1000
+            duration: 1000,
+            class: ''
         };
 
         params = $.extend({}, defaults, params);
@@ -15,7 +16,7 @@
             var $window = $(window);
             var $link = $('<a></a>')
             .attr('href', '#')
-            .addClass('scrolltop')
+            .addClass('scrolltop ' + params.class)
             .html(params.template)
             .click(function(e){
                 e.preventDefault();
