@@ -1,6 +1,6 @@
 (function($){
 
-    $.fn.scrolltop = function(params){
+    $.scrolltop = function(params){
 
         var defaults = {
             template: '^',
@@ -10,32 +10,28 @@
 
         params = $.extend({}, defaults, params);
 
-        return this.each(function(){
+        var $element = $('body');
+        var $window = $(window);
+        var $link = $('<a></a>')
+        .attr('href', '#')
+        .addClass('scrolltop ' + params.class)
+        .html(params.template)
+        .click(function(e){
+            e.preventDefault();
+            $('body', 'html').animate({
+                scrollTop: 0
+            }, params.duration);
+        })
+        .appendTo($element);
 
-            var $element = $(this);
-            var $window = $(window);
-            var $link = $('<a></a>')
-            .attr('href', '#')
-            .addClass('scrolltop ' + params.class)
-            .html(params.template)
-            .click(function(e){
-                e.preventDefault();
-                $('body', 'html').animate({
-                    scrollTop: $element.offset().top
-                }, params.duration);
-            })
-            .appendTo($element);
-
-            $window.scroll(function(e){
-                var scrollTop = $(this).scrollTop();
-                if (scrollTop > $(this).height() / 2) {
-                    $link.addClass('active');
-                }
-                else {
-                    $link.removeClass('active');
-                }
-            });
-
+        $window.scroll(function(e){
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop > $(this).height() / 2) {
+                $link.addClass('active');
+            }
+            else {
+                $link.removeClass('active');
+            }
         });
 
     };
