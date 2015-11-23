@@ -11,6 +11,9 @@
     <!-- Bootstrap -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="../src/css/jquery.scrolltop.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -156,7 +159,9 @@
     <script>
         (function($){
 
-            $('body').scrolltop();
+            $('body').scrolltop({
+                template: '<i class="fa fa-chevron-up"></i>'
+            });
 
         })(jQuery);
 

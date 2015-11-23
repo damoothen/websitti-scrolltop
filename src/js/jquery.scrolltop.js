@@ -3,6 +3,7 @@
     $.fn.scrolltop = function(params){
 
         var defaults = {
+            template: '^',
             duration: 1000
         };
 
@@ -15,7 +16,7 @@
             var $link = $('<a></a>')
             .attr('href', '#')
             .addClass('scrolltop')
-            .html('^')
+            .html(params.template)
             .click(function(e){
                 e.preventDefault();
                 $('body', 'html').animate({
