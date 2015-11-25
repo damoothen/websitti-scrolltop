@@ -18,7 +18,7 @@
         .html(params.template)
         .click(function(e){
             e.preventDefault();
-            $('body', 'html').animate({
+            $('body, html').animate({
                 scrollTop: 0
             }, params.duration);
         })
